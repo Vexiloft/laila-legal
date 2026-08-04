@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laila — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a2e;
+    --muted: #5a5a72;
+    --accent: #7c5cbf;
+    --border: #e4e2ee;
+    --card: #f7f6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14101f;
+      --fg: #eae7f2;
+      --muted: #a09ab4;
+      --accent: #b39ddb;
+      --border: #2e2742;
+      --card: #1d1730;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  a { color: var(--accent); }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+  th { background: var(--card); }
+  .table-wrap { overflow-x: auto; }
+  code { background: var(--card); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for Laila</h1>
+  <p class="meta">Effective date: August 4, 2026 · Last updated: August 4, 2026</p>
+
+  <p>Laila ("the app") is developed and operated by Vexiloft (sole proprietorship, Sweden). This policy explains what data the app collects, how it is used, and the choices you have.</p>
+  <p><strong>Contact:</strong> <a href="mailto:vexiloftsupport@gmail.com">vexiloftsupport@gmail.com</a></p>
+
+  <div class="summary">
+    <strong>Summary</strong>
+    <ul>
+      <li>You sign in with your Google account; we store your email, name, and profile picture.</li>
+      <li>Your conversations with Laila (the AI companion) are stored in our database and processed by a third-party AI provider to generate responses.</li>
+      <li>App-usage and app-blocking data (which apps you use and block) <strong>stays on your device</strong> and is never uploaded.</li>
+      <li>We do not sell your data or use it for advertising.</li>
+      <li>You can request deletion of your account and all associated data by email.</li>
+    </ul>
+  </div>
+
+  <h2>1. Data we collect and store</h2>
+  <h3>Account information</h3>
+  <p>When you sign in with Google, we receive and store:</p>
+  <ul>
+    <li>Email address</li>
+    <li>Display name</li>
+    <li>Profile picture URL</li>
+  </ul>
+  <p>This is used to create and identify your account.</p>
+
+  <h3>Chat data</h3>
+  <p>When you talk to Laila, we store on our servers:</p>
+  <ul>
+    <li>Your messages and Laila's responses</li>
+    <li>Conversation titles and metadata</li>
+    <li>Images you send in chat</li>
+    <li>Memories the AI derives from your conversations (short notes that help Laila remember context between sessions, e.g. your preferences or things you have told it)</li>
+  </ul>
+
+  <h3>App settings and activity</h3>
+  <p>We store your in-app settings, focus/blocking session records (start time, duration, outcome — not which apps were involved), and habit-tracking entries you create.</p>
+
+  <h3>Usage counters</h3>
+  <p>We count the number of AI messages you send to enforce the message limits of your plan.</p>
+
+  <h2>2. Data that stays on your device</h2>
+  <p>The app's distraction-blocking features read which apps are installed and how you use them (via Android's Usage Access permission). This data — the list of installed apps, app-usage statistics, and your blocking rules — is processed <strong>entirely on your device</strong>. It is never transmitted to our servers or to any third party.</p>
+
+  <h2>3. How AI responses are generated</h2>
+  <p>To generate Laila's responses, your chat messages (and images, where applicable) are sent to our backend and forwarded to <strong>OpenRouter, Inc.</strong> (openrouter.ai), a service that routes requests to AI model providers. OpenRouter processes your messages to produce a response. We have configured our use of OpenRouter such that prompts are not used for training by OpenRouter; the underlying model providers' handling is governed by OpenRouter's privacy policy: <a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a></p>
+
+  <h2>4. Where your data is stored</h2>
+  <p>Chat data, account information, and settings are stored with <strong>Supabase</strong> (supabase.com), our database and backend hosting provider. Supabase's privacy policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
+
+  <h2>5. Android permissions the app uses</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Permission</th><th>Why</th></tr>
+      <tr><td>Usage Access (PACKAGE_USAGE_STATS)</td><td>To detect which app is in the foreground so distracting apps can be blocked during focus sessions. Processed on-device only.</td></tr>
+      <tr><td>Query installed apps (QUERY_ALL_PACKAGES)</td><td>To show you the list of your installed apps so you can choose which ones to block. Processed on-device only.</td></tr>
+      <tr><td>Display over other apps</td><td>To show the blocking screen when you open a blocked app.</td></tr>
+      <tr><td>Notifications</td><td>To show focus-session status and reminders.</td></tr>
+      <tr><td>Foreground service</td><td>To keep blocking active during a focus session.</td></tr>
+    </table>
+  </div>
+
+  <h2>6. What we do NOT do</h2>
+  <ul>
+    <li>We do not sell or rent your personal data.</li>
+    <li>We do not show ads or share data with advertisers.</li>
+    <li>We do not upload your app-usage or installed-app data.</li>
+    <li>We do not use your conversations to train AI models.</li>
+  </ul>
+
+  <h2>7. Payments</h2>
+  <p>Subscriptions (when available) are processed by Google Play. We do not receive or store your payment card details.</p>
+
+  <h2>8. Data retention</h2>
+  <p>Your data is retained for as long as your account exists. If you request deletion, your account and all associated server-side data (profile, conversations, messages, images, memories, settings, session records) are permanently deleted.</p>
+
+  <h2>9. Deleting your account and data</h2>
+  <p>To delete your account and all associated data, email <strong><a href="mailto:vexiloftsupport@gmail.com">vexiloftsupport@gmail.com</a></strong> from the Google account email you signed in with, with the subject "Delete my account". We will confirm and complete the deletion within 30 days.</p>
+  <p>On-device data can be removed at any time by uninstalling the app or clearing its storage.</p>
+
+  <h2>10. Children</h2>
+  <p>Laila is not directed at children under 13 (or the applicable age of digital consent in your country), and we do not knowingly collect data from them. If you believe a child has created an account, contact us and we will delete it.</p>
+
+  <h2>11. Your rights (GDPR)</h2>
+  <p>We operate from Sweden and comply with the EU General Data Protection Regulation. You have the right to access, correct, export, or delete your personal data, and to object to or restrict its processing. To exercise any of these rights, email <strong><a href="mailto:vexiloftsupport@gmail.com">vexiloftsupport@gmail.com</a></strong>. You also have the right to lodge a complaint with your local data protection authority (in Sweden: Integritetsskyddsmyndigheten, <a href="https://www.imy.se">imy.se</a>).</p>
+  <p>The legal bases for our processing are: performance of a contract (providing the app and AI chat you signed up for), and legitimate interest (enforcing usage limits, preventing abuse).</p>
+
+  <h2>12. Security</h2>
+  <p>Data in transit is encrypted (HTTPS/TLS). Server-side data access is restricted per-user through row-level security, so one user's data is not accessible to another.</p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>We may update this policy as the app evolves (for example, when in-app subscriptions launch). Material changes will be reflected by the "Last updated" date above, and significant changes will be announced in the app.</p>
+</main>
+</body>
+</html>
